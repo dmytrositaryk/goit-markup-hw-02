@@ -24,7 +24,7 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -49,7 +49,9 @@ ul {
 }
 
 .header-menu-link:hover,
-.header-address-link:hover {
+.header-menu-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
   color: #404bbf;
 }
 
@@ -79,7 +81,7 @@ ul {
 .hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
@@ -91,11 +93,12 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  background-color: #4d5ae5;
   cursor: pointer;
 }
 
-.hero-btn:hover {
-  color: #404bbf;
+.hero-btn:hover .hero-btn:focus {
+  background-color: #404bbf;
 }
 
 /* ADVANTAGES */
@@ -131,9 +134,10 @@ ul {
 }
 
 .team-title {
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -143,6 +147,7 @@ ul {
 }
 
 .team-item {
+  background-color: #ffffff;
 }
 
 .team-image {
@@ -171,9 +176,10 @@ ul {
 }
 
 .portfolio-title {
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -212,13 +218,13 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
 }
 
-.footer-logo span {
+.footer-logo > span {
   color: #f4f4fd;
 }
 
